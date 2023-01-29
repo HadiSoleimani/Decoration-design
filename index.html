@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kabino</title>
+    <link rel="stylesheet" href="../Decoration_design2/style.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="headr">
+            <div class="header_right">
+                <img src="../Decoration_design2/assets/img/logo.svg">
+            </div>
+            <div class="header_left">
+                <nav>
+                    <ul class="header_nav">
+                        <li><a href="file:///C:/Users/Hadi/Desktop/Decoration_design2/index.html">خانه</a></li>
+                        <li id="sample1"> نمونه کارها</li>
+                        <li id="sample2">درباره ما</li>
+                        <li id="sample3">خدمات ما</li>
+                        <li id="sample4"> تماس با ما</li>
+                        <li><a href="file:///C:/Users/Hadi/Desktop/Decoration_design2/admin.html"> پنل ادمین</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+
+        <div class="page_intro">
+            <img src="../Decoration_design2/assets/img/Frame 4.svg">
+        </div>
+
+
+        <div class="about_us">
+            <div class="about_us_right">
+                <img src="../Decoration_design2/assets/img/image 7.svg">
+            </div>
+            <div class="about_us_left">
+                <h2>درباره ما</h2>
+                <hr>
+                <p>
+                     زیبایی  خانه های  تان  را  با  کابینو تحربه  کنید متخصصان ما  با چندین 
+                    <br>
+                    سال سابقه کار در زمینه طراحی دکوراسیون اماهارائه خدمات به شما
+                    <br>
+                    .همشهریان  عزیز می باشند 
+                </p>
+            </div>
+        </div>
+
+
+        <div class="my_team">
+            <img src="../Decoration_design2/assets/img/team.svg">
+        </div>
+
+
+        <div class="services">
+            <div class="service_card1">
+               <p>خدمات ما</p>
+            </div>
+            <div class="service_card2">
+                <p>طراحی دکوراسوین اتاق خواب </p>
+             </div>
+             <div class="service_card3">
+                <p>خدمات طراحی دکوراسیون منزل 
+                    <br>
+                    مغازه ، رستوران ، شرکت و
+                </p>
+             </div>
+             <div class="service_card4">
+                <p>طراحی نما </p>
+             </div>
+             <div class="service_card5">
+                <p>بازسازی ساختمان  </p>
+             </div>
+             <div class="service_card6">
+                <p>طراحی دکوراسیون پذیرایی   </p>
+             </div>
+
+        </div>
+
+
+        <div class="work_sample">
+            <h4>نمونه کارها</h4>
+            <div class="work_sample_right">
+                <img src="../Decoration_design2/assets/img/image 12.svg">
+            </div>
+            <div class="work_sample_left">
+                <img src="../Decoration_design2/assets/img/image 11.svg">
+            </div>
+            <div class="work_sample_bottom">
+                <img src="../Decoration_design2/assets/img/image 5.svg">
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="footer_right">
+                <div class="footer_right_call">
+                    <h1>ثبت یک مشاره رایگان</h1>
+                    <div class="footer_right_input1">
+                        <form>
+                            <input id="inp1" type="text" name="name1"  placeholder ="نام و نام خانوداگی" required>
+                            <input id="inp2" type="tel" name="name2"   placeholder="شماره تماس"  required>
+                            <input id="inp3" type="email" name="name3" placeholder="ایمیل" required>
+                        </form>
+                    </div>
+                    <div class="footer_right_input2">
+                        <textarea id="inp4" type="text" name="name" placeholder="پیام شما" rows="5" cols="60"></textarea>
+                    </div>
+                    <input id="inp5" class="footer_right_btn" type="submit" value="ثبت یک مشاوره">
+                </div>
+            </div>
+            <div class="footer_left">
+                <h4>تماس با ما</h4>
+                <hr>
+                <ul>
+                    <li><span>نشانی  : </span>تبریز ، بلوار 29 بهمن ، دانشگاه تبریز</li>
+                    <li><span>تلفن  : </span> 041-35555555</li>
+                    <li><span>کد پستی  : </span>54698987465</li>
+                    <li> tabriz@gmail.com<span> : ایمیل </span></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <script>
+
+            ///////scroll
+            var a = document.getElementById("sample1")
+            a.addEventListener( "click",function(){
+                scrollTo(0,3600)
+            })
+
+            var a = document.getElementById("sample2")
+            a.addEventListener( "click",function(){
+                scrollTo(0,860)
+            })
+
+            var a = document.getElementById("sample3")
+            a.addEventListener( "click",function(){
+                scrollTo(0,2500)
+            })
+
+            var a = document.getElementById("sample4")
+            a.addEventListener( "click",function(){
+                scrollTo(0,5200)
+            })
+
+
+
+            /////////receive value of forms
+            var fullName = document.getElementById("inp1")
+            var phoneNamber = document.getElementById("inp2")
+            var email = document.getElementById("inp3")
+            var message = document.getElementById("inp4")
+
+            var send = document.getElementById("inp5")
+            send.addEventListener("click" , validation)
+
+            function validation(){
+
+                if(fullName.value.length < 6){
+                    alert("نام و نام خانوادگی حداقل باید 6 حرف داشته باشد")
+                    return false
+                }
+                if(phoneNamber.value.length !== 11){
+                    alert("شماره تلفن صحیح نمی باشد")
+                    return false
+                }
+                var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                if(!(email.value.match(mailformat))){
+                    alert("فرمت ایمیل صحیح نیست")
+                    return false
+                }
+
+                alert("پیام شما با موفقیت ارسال شد")
+                console.log("fullName : " + fullName.value)
+                console.log("phoneNamber : " + phoneNamber.value)
+                console.log("email : " + email.value)
+                console.log("message : " + message.value)
+
+                fullName.value=""
+                phoneNamber.value = ""
+                email.value = ""
+                message.value = ""
+
+            }
+
+        </script>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+body{
+    margin: 0%;
+}
+*{
+    box-sizing: border-box;
+    color: black;
+    font-family: inter;
+    font-weight: 200;
+}
+@font-face{
+    font-family: inter;
+    font-weight: 200;
+    src: url(../Decoration_design2/assets/fonts/NotoSansArabic_SemiCondensed-Regular.ttf);
+}
+@font-face{
+    font-family: inter;
+    font-weight: 400;
+    src: url(../Decoration_design2/assets/fonts/NotoSansArabic_SemiCondensed-Bold.ttf);
+}
+.headr{
+    width: 100%;
+    height: 105px;
+}
+.header_right{
+    width: 30%;
+    height: 105px;
+    float: right;
+}
+.header_right img{
+    margin-top: 9px;
+    margin-right: 150px;
+    float: right;
+}
+.header_left{
+    width: 70%;
+    height: 105px;
+    float: right;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header_nav{
+    float: left;
+    margin-left: 150px;
+    margin-top: 41px;
+}
+.header_nav li{
+    padding-right: 35px;
+    float: right;
+}
+
+
+
+
+
+
+.rvc{
+    width: 100%;
+    height: 910px;
+    padding-top: 77px;
+}
+.rvc h1{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: right;
+    margin: 0px 100px 77px 0px;
+}
+.table{
+    width: 1240px;
+    height: 606px;
+    border-radius: 30px;
+    float: right;
+    margin-right: 55px;
+    border: 1px solid #CBCBCB;
+}
+.table1{
+    width: 20%;
+    height: 606px;
+    float: right;
+}
+.table1 h4{
+    text-align: center;
+    font-size: 16px;
+}
+.table1 hr{
+    border: 1px solid #CBCBCB;
+}
+.table1 p{
+    text-align: center;
+    font-size: 16px;
+    color: #3a4254;
+}
